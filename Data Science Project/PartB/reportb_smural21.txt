@@ -1,0 +1,164 @@
+----Determining the sentiment of each tweet----
+This was completed on 23rd March at 10 AM in the morning.
+
+The command should be ran as indicated in the Assignment question:
+	$python3 tweet_sentiment_smural21.py <sentiment_file> <tweet_file> > tweet_sentiment_smural21.txt
+
+The sentiment file is assumed to be in the data folder.
+The tweet file is assumed to be in the same folder as the python script - tweet_sentiment_smural21.py
+
+The top 10 and bottom 10 tweets:
+Tweet: Sentiment Score
+
+16 :  RT @AllahGreatQuran: Dear Allah, grant me your love, grant me that I love those who love you; grant me, that I might do the deeds that win …
+14 :  RT @StationCDRKelly: Thanks Box for the kind words, but hero is a stretch! Extremely honored &amp; lucky to join the amazing mission on ISS. ht…
+12 :  RT @JCapSaRa: i love this
+i love them
+i really love this
+i really really love them https://t.co/g9ENC5Sn4x
+12 :  RT @peytondavisz: joy with a gun wow beautiful god bless https://t.co/v2NeaX8Uee
+11 :  @Harry_Styles I admire you a lot, always will support you would make me happy if you follow me, I love you with all my heart💫🙏💘
+
+-2,540
+11 :  RT @justxhandy: @Harry_Styles Hi harry! 
+Thanks for being kind and nice and for bringing happiness to the world.I love you, would you mind …
+11 :  RT @AlbertsTable: It's our great pleasure to be able to prepare excellent dishes like this for our customers.
+#LiveTheDream #Chef https://t…
+11 :  @girardwho winner winner chicken dinner has some really good ones (:
+11 :  RT @zdarsky: heard a rumour that Batman v Superman is not very good please be careful out there and hug your loved ones tight tonight
+11 :  @Harry_Styles I admire you a lot, always will support you would make me happy if you follow me, I love you with all my heart💫🙏💘
+
+-2,529
+-11 :  RT @McDonaIdsSuport: Hmmm, just dip that bitch in sweet &amp; sour sauce, niggas die everyday b https://t.co/jNMEfAOcob
+-11 :  @realDonaldTrump you're a bitch no one likes you're dumb ass anyway you're mother is a
+-11 :  so I let my bitch go that shit hurts
+-11 :  So damn annoying when I think about dating, then immediately pivot into hating my flabby-ass, gross body. A fever of physical self-loathing.
+-11 :  RT @philhazlewood: $5.9bn damage, 950k homes destroyed, 20K dead: huge destruction from Boko Haram in Borno revealed @afp #Nigeria https://…
+-12 :  RT @realDonaldTrump: My heart &amp; prayers go out to all of the victims of the terrible #Brussels tragedy. This madness must be stopped, and I…
+-14 :  2016 bitches still having babies with niggas that don't give a fuck
+-16 :  RT @ThtFreakyNigga: All you women complaining about niggas.... Stop fucking wit lame niggas then! 🙌🏽😒💯
+-16 :  RT @TPM: Trump all for torturing terror suspects: "he'll talk faster with the torture" https://t.co/ItALCC0DqM https://t.co/Gqf6YHGFjj
+-20 :  slut xxx milf latina slut xxx milf latina slut xxx milf latina slut xxx milf latina porn link removed https://t.co/7defNLF0gV  t...  teen
+
+
+Algorithm:
+
+1. Store the sentiment scores for words from the given sentiment file.
+2. Then, store each tweet as a key in a dictionary.
+3. Then parse through each tweet.
+4. Pick each word from the tweet.
+5. Check if it the entire string is an alphabetic string.
+6. If not, try removing the extra characters like (",'!#().) and test for the remaining word.
+7. Then add scores from each word to the total tweet score.
+8. Add the corresponding tweet score to the tweet's score in the dictionary.
+9. After compiling the score for every tweet, sort a list based on the score.
+10. Then print according to the expected output -> (score: tweet).
+
+Other notes/Considerations:
+1. I have added a few more words to the sentiment words in the file AFINN111.txt like smileys.
+2. I also trimmed down words like Love!!! -> Love, Wow!!!! - Wow, Bad. -> Bad. This helped in including the score for these words which werent detected because of the special characters or punctuations.
+
+----------------------------------
+-----Happiest Actor-----
+
+2.52 : Krystenritter
+2.04 : mrbobodenkirk
+1.81 : quiethandfilms
+1.56 : RjMitte
+1.49 : deanjnorris
+1.48 : CharlesEbaker
+1.47 : aaronpaul_8
+1.33 : betsy_brandt
+1.29 : LuisMoncada77
+1.21 : BryanCranston
+1.11 : DanielMoncada80
+-0.01020408163265306 : mattjonesisdead
+
+
+Algorithm Used:
+
+1. Store the sentiment scores for words from the given sentiment file.
+2. Then, store each actor as a key in a dictionary.
+3. Then parse through each tweet.
+4. Pick each word from the tweet.
+5. Check if it the entire string is an alphabetic string.
+6. If not, try removing the extra characters like ("-,-'-!-#-(-)-.) and test for the remaining word.
+7. Then add scores from each word to the total tweet score.
+8. Add the corresponding tweet score to the actor's score.
+9. Compute the average sentiment score by using the formula - (TotalScore/Total number of tweets by the actor).
+10. After compiling the score for every actor, sort a list based on the score.
+11. Then print according to the expected output -> (score: username).
+
+Other notes/Considerations:
+1. I have added a few more words to the sentiment words in the file AFINN111.txt like smileys.
+2. I also trimmed down words like Love!!! -> Love, Wow!!!! - Wow, Bad. -> Bad. This helped in including the score for these words which werent detected because of the special characters or punctuations.
+----------------------------------
+
+----Happiest States----
+
+Top 5 happiest states:
+
+2.0000 :  DE
+1.7857 :  MO
+1.6071 :  IL
+1.5000 :  VT
+1.3333 :  MI
+
+Top 5 unhappiest states:
+
+-4.0000 :  AK
+-3.6667 :  UT
+-1.8333 :  MS
+-0.8571 :  HI
+-0.8000 :  NM
+
+Abbreviations:
+DE- Delaware
+MO- Missouri
+IL- Illinois
+VT- Vermont
+MI- Michigan
+AK- Arkansas
+UT- Utah
+MS- Mississippi
+HI- Hawaii
+NM- New Mexico
+
+Algorithm Used:
+
+1. Collect all states data as abbreviations and full names into a dictionary.
+2. Collect all word sentiment score into a dictionary.
+3. Parse each tweet text and compute the score for that particular tweet.
+4. Immediately, find the related states to each tweet.
+5. For finding related state, parse through the location and place attribute.
+6. In location attribute, find words of the format - (city, State) or (State, USA) or (StateAbbreviation, USA) or (City,State,USA).
+7. In the place attribute, split up the words and search for states or state abbreviations. Eg: I love Illinois.
+8. Then evaluate the found state with the dictionary and that state to the related state list for that tweet.
+9. For each state in the related state list, assign the tweet score to it and increase the tweet count for that state as well.
+10. Compute the average sentiment score by using the formula - (TotalScore/Total number of tweets related to the state).
+11. Sort the list according to average score.
+12. Print acording to the expected output : <State score: State abbreviation>.
+
+
+Considerations/Other notes:
+
+I. General notes:
+	1. All input tweet files are of the streaming_output_full.txt format.
+	2. No external geocoder service is used.
+	3. US state list with abbreviations was self compiled and put into a csv file in the data folder named : "USAstates.csv".
+
+II. Data cleaning and parsing:
+	1. The data fetched was done so in the json format.
+	2. While checking each word in the tweet for states, all trailing and leading symbols were removed to make sure data isnt 	lost. Eg: #Miami -> Miami, Landed in Texas!!!! -> Landed in Texas
+	3. All the format checking was done after making sure there were a majority of them when compared to the dirty data.
+	4. Words without symbols were trimmed to make sure sentiment scores were not missed. Eg: Wow!!!! -> Wow, I am good. -> I am good 
+
+
+III. Other notes:
+	1. The final score is printed upto 4 decimal places after careful observation of the data to make sure efficient comparisons could be made.
+	2. A pre analysis of the data showed that there was a higher probability of finding a state in the 'user location' attribute than the 'place' attribute.
+	3. Out of a sample tweet count of 5405 tweets, the tweets from USA was around 3409. Among this 3409, the 'user location' attribute had a hit of 1093 state matches. The 'place' attribute accounted for 495 state matches. So the total analysis was made on 2588 tweets. To note: This was for the sample file I created -> streaming_output_full_smural21.txt.It can vary for other files.
+
+----------------------------Thank You----------------------------
+
+

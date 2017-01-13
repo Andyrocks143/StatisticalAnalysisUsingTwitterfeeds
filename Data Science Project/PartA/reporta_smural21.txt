@@ -1,0 +1,71 @@
+----Search API-----
+The third query to fetch data from the Search API was run on 18th march 2016 at 7:20 pm on the remote machine in azure via Putty. The search term used was "Trump". 
+
+OUTPUT: Sample tweets for the term - "Trump":-
+
+"RT @MrMediaTraining: A word about @megynkelly\'s behavior and actions in response to Trump\'s attacks: she has been a total mensch.  https:\\/\\/\\u2026"
+--
+"Fox News hits Donald Trump for \'sexist verbal assaults\' on Megyn Kelly March 18 https:\\/\\/t.co\\/YC7dJNOv9M"
+--
+"RT @PoliticoCharlie: Trump is crushing it in Appalachia. He\'s won the vast majority of counties on this map, w\\/a few states still to come h\\u2026"
+--
+"RT @JennaVega11: @FoxNews @woodruffbets @greta Americans have no respect for this low-life scum #MittRomney . Vote Trump if you want to sav\\u2026"
+--
+"\\"@WSJ: To many in Latin America, Donald Trump looks like a familiar figure: the caudillo https:\\/\\/t.co\\/sA64Qlfv9T https:\\/\\/t.co\\/rgot6yCmhK\\""
+--
+"RT @DRUDGE_REPORT: SHERIFF JOE TO POLICE TRUMP RALLY... https:\\/\\/t.co\\/jS8N7FG3yE"
+--
+"Fox: Trump has \'extreme, sick obsession\' with Megyn Kelly https:\\/\\/t.co\\/AoXIYAB6WN"
+--
+"JULIAN CASTRO WILL BE HILLARY\'S VP PICK read why@ https:\\/\\/t.co\\/j77ran4i09  Trump VP Pick coming tomorrow..#politics #Hillary2016 #TrumpTrain"
+--
+"RT @SpecialKMB1969: DONALD TRUMP SCARES BOTH REPUBLICANS &amp; DEMOCRATS BC HE CAN WIN!\\n#WeAreTrump \\n@lvphillies08 \\nhttps:\\/\\/t.co\\/QAuhuxnDts htt\\u2026"
+--
+"Trump Utah...LIVE..https:\\/\\/t.co\\/kP7mntD5Ct"
+--
+"@FoxNews @Timodc @realDonaldTrump why does fox always have this POS @timmiller on always bashing trump cuz he\'s mad he\'s a failure, punk ass"
+--
+"RT @SupportDonald: Congressman Tom Reed endorses #DonaldTrump. This is #Trump\'s 7th lawmaker endorsement. #Trump2016 #TrumpTrain https:\\/\\/t.\\u2026"
+--
+"https:\\/\\/t.co\\/EUDdf1DrMU  #dumptrump  #Trump2016 is not the answer , time to take trump to the curb"
+--
+"RT @FiveRights: Mitt Romney, Scumbag.\\nKnows Trump employs 1000s of minorities.\\nKeeps pushing Trump racist narrative anyway. https:\\/\\/t.co\\/Pq\\u2026"
+--
+"Mitt Romney, Scumbag.\\nKnows Trump employs 1000s of minorities.\\nKeeps pushing Trump racist narrative anyway. https:\\/\\/t.co\\/Pqlr8kd0tZ"
+--
+"@MittRomney has joined with #anonymous hackers to fight Trump.\\nMitt lets us down. @realDonaldTrump"
+
+
+------------Term Frequency------------------
+Top 30 frequent terms and their term frequency:
+
+rt 0.051174598057782975
+like 0.005097312326227989
+&amp; 0.004492887939718741
+- 0.004452592980618125
+i'm 0.004251118185115042
+get 0.0040697908691622675
+love 0.0038078736350082606
+don't 0.0031027118507474714
+new 0.003082564371197163
+it's 0.0029415320143450054
+people 0.0027803521779425394
+u 0.0025385824233388403
+one 0.0025385824233388403
+know 0.0021960752709836
+see 0.0020348954345811338
+go 0.001954305516379901
+good 0.001893863077728976
+back 0.0018334206390780514
+want 0.00173268324132651
+you're 0.0016923882822258934
+time 0.0016319458435749689
+make 0.0015916508844743523
+need 0.0015916508844743523
+best 0.0015916508844743523
+got 0.0015312084458234275
+us 0.0014707660071725027
+#iheartawards 0.0014506185276221945
+can't 0.0014506185276221945
+really 0.001410323568521578
+via 0.001410323568521578

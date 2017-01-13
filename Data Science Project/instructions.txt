@@ -1,0 +1,8 @@
+Consumer Key (API Key)	588byb47hyD2ksjLssW9brmIw
+Consumer Secret (API Secret)	U7fS7BITeipMNXGyURqXtxsiTn5YIMHD3w389blecP4nXyBaNK
+
+Access Token	794637657942831104-BTdBOrPC4gLKkRbqoHRKQZumTNx6wAU
+Access Token Secret	XWPkGg4Ay9vcEISLcxfmXfmNaOGonzs45tIshK1GpmWaZ
+
+Owner	Andy_AnandR
+Owner ID	794637657942831104
